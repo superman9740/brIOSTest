@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F6664BE35A6401DB40C1F6D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECDF47BF2DC145BE988F5D2A /* libPods.a */; };
+		DEDF859E18FDBAE80025E5CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEDF859D18FDBAE80025E5CC /* Foundation.framework */; };
+		DEDF85A018FDBAE80025E5CC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEDF859F18FDBAE80025E5CC /* CoreGraphics.framework */; };
+		DEDF85A218FDBAE80025E5CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEDF85A118FDBAE80025E5CC /* UIKit.framework */; };
+		DEDF85A818FDBAE80025E5CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DEDF85A618FDBAE80025E5CC /* InfoPlist.strings */; };
+		DEDF85AA18FDBAE80025E5CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDF85A918FDBAE80025E5CC /* main.m */; };
+		DEDF85AE18FDBAE80025E5CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDF85AD18FDBAE80025E5CC /* AppDelegate.m */; };
+		DEDF85B018FDBAE80025E5CC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEDF85AF18FDBAE80025E5CC /* Images.xcassets */; };
+		DEDF85B718FDBAE80025E5CC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEDF85B618FDBAE80025E5CC /* XCTest.framework */; };
+		DEDF85B818FDBAE80025E5CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEDF859D18FDBAE80025E5CC /* Foundation.framework */; };
+		DEDF85B918FDBAE80025E5CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEDF85A118FDBAE80025E5CC /* UIKit.framework */; };
+		DEDF85C118FDBAE80025E5CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DEDF85BF18FDBAE80025E5CC /* InfoPlist.strings */; };
+		DEDF85C318FDBAE80025E5CC /* brIOSTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDF85C218FDBAE80025E5CC /* brIOSTestTests.m */; };
+		DEDF85CD18FDBB1C0025E5CC /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEDF85CC18FDBB1C0025E5CC /* MainWindow.xib */; };
+		DEDF85D218FDBCB50025E5CC /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDF85D018FDBCB50025E5CC /* TableViewController.m */; };
+		DEDF85D318FDBCB50025E5CC /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEDF85D118FDBCB50025E5CC /* TableViewController.xib */; };
+		DEDF85D818FDBD250025E5CC /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDF85D618FDBD250025E5CC /* WebViewController.m */; };
+		DEDF85D918FDBD250025E5CC /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEDF85D718FDBD250025E5CC /* WebViewController.xib */; };
+		DEDF85DD18FDC9360025E5CC /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDF85DB18FDC9360025E5CC /* CustomTableViewCell.m */; };
+		DEDF85DE18FDC9360025E5CC /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEDF85DC18FDC9360025E5CC /* CustomTableViewCell.xib */; };
+		DEDF85E218FDCC940025E5CC /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDF85E118FDCC940025E5CC /* Store.m */; };
+		DEDF85E618FDCD1C0025E5CC /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDF85E518FDCD1C0025E5CC /* AppController.m */; };
+		DEF2031218FDE42C008AA191 /* tbAsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF2031118FDE42B008AA191 /* tbAsyncImageView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DEDF85BA18FDBAE80025E5CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEDF859218FDBAE80025E5CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEDF859918FDBAE80025E5CC;
+			remoteInfo = brIOSTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DEDF859A18FDBAE80025E5CC /* brIOSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = brIOSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEDF859D18FDBAE80025E5CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DEDF859F18FDBAE80025E5CC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DEDF85A118FDBAE80025E5CC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DEDF85A518FDBAE80025E5CC /* brIOSTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "brIOSTest-Info.plist"; sourceTree = "<group>"; };
+		DEDF85A718FDBAE80025E5CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DEDF85A918FDBAE80025E5CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DEDF85AB18FDBAE80025E5CC /* brIOSTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "brIOSTest-Prefix.pch"; sourceTree = "<group>"; };
+		DEDF85AC18FDBAE80025E5CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DEDF85AD18FDBAE80025E5CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DEDF85AF18FDBAE80025E5CC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DEDF85B518FDBAE80025E5CC /* brIOSTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = brIOSTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEDF85B618FDBAE80025E5CC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DEDF85BE18FDBAE80025E5CC /* brIOSTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "brIOSTestTests-Info.plist"; sourceTree = "<group>"; };
+		DEDF85C018FDBAE80025E5CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DEDF85C218FDBAE80025E5CC /* brIOSTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = brIOSTestTests.m; sourceTree = "<group>"; };
+		DEDF85CC18FDBB1C0025E5CC /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		DEDF85CF18FDBCB50025E5CC /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		DEDF85D018FDBCB50025E5CC /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		DEDF85D118FDBCB50025E5CC /* TableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
+		DEDF85D518FDBD250025E5CC /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		DEDF85D618FDBD250025E5CC /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		DEDF85D718FDBD250025E5CC /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		DEDF85DA18FDC9360025E5CC /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		DEDF85DB18FDC9360025E5CC /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		DEDF85DC18FDC9360025E5CC /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		DEDF85E018FDCC940025E5CC /* Store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Store.h; sourceTree = "<group>"; };
+		DEDF85E118FDCC940025E5CC /* Store.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Store.m; sourceTree = "<group>"; };
+		DEDF85E418FDCD1C0025E5CC /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		DEDF85E518FDCD1C0025E5CC /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		DEF2031018FDE42B008AA191 /* tbAsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tbAsyncImageView.h; sourceTree = "<group>"; };
+		DEF2031118FDE42B008AA191 /* tbAsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tbAsyncImageView.m; sourceTree = "<group>"; };
+		ECDF47BF2DC145BE988F5D2A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED7C9DAB398346178C3882A5 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEDF859718FDBAE80025E5CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEDF85A018FDBAE80025E5CC /* CoreGraphics.framework in Frameworks */,
+				DEDF85A218FDBAE80025E5CC /* UIKit.framework in Frameworks */,
+				DEDF859E18FDBAE80025E5CC /* Foundation.framework in Frameworks */,
+				8F6664BE35A6401DB40C1F6D /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEDF85B218FDBAE80025E5CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEDF85B718FDBAE80025E5CC /* XCTest.framework in Frameworks */,
+				DEDF85B918FDBAE80025E5CC /* UIKit.framework in Frameworks */,
+				DEDF85B818FDBAE80025E5CC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DEDF859118FDBAE80025E5CC = {
+			isa = PBXGroup;
+			children = (
+				DEDF85A318FDBAE80025E5CC /* brIOSTest */,
+				DEDF85BC18FDBAE80025E5CC /* brIOSTestTests */,
+				DEDF859C18FDBAE80025E5CC /* Frameworks */,
+				DEDF859B18FDBAE80025E5CC /* Products */,
+				ED7C9DAB398346178C3882A5 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		DEDF859B18FDBAE80025E5CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEDF859A18FDBAE80025E5CC /* brIOSTest.app */,
+				DEDF85B518FDBAE80025E5CC /* brIOSTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEDF859C18FDBAE80025E5CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEDF859D18FDBAE80025E5CC /* Foundation.framework */,
+				DEDF859F18FDBAE80025E5CC /* CoreGraphics.framework */,
+				DEDF85A118FDBAE80025E5CC /* UIKit.framework */,
+				DEDF85B618FDBAE80025E5CC /* XCTest.framework */,
+				ECDF47BF2DC145BE988F5D2A /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DEDF85A318FDBAE80025E5CC /* brIOSTest */ = {
+			isa = PBXGroup;
+			children = (
+				DEDF85E318FDCD0F0025E5CC /* AppController */,
+				DEDF85DF18FDCC1B0025E5CC /* Model */,
+				DEDF85D418FDBD0B0025E5CC /* WebView */,
+				DEDF85CE18FDBC890025E5CC /* TableView */,
+				DEDF85AC18FDBAE80025E5CC /* AppDelegate.h */,
+				DEDF85AD18FDBAE80025E5CC /* AppDelegate.m */,
+				DEDF85AF18FDBAE80025E5CC /* Images.xcassets */,
+				DEDF85A418FDBAE80025E5CC /* Supporting Files */,
+				DEDF85CC18FDBB1C0025E5CC /* MainWindow.xib */,
+			);
+			path = brIOSTest;
+			sourceTree = "<group>";
+		};
+		DEDF85A418FDBAE80025E5CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DEDF85A518FDBAE80025E5CC /* brIOSTest-Info.plist */,
+				DEDF85A618FDBAE80025E5CC /* InfoPlist.strings */,
+				DEDF85A918FDBAE80025E5CC /* main.m */,
+				DEDF85AB18FDBAE80025E5CC /* brIOSTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DEDF85BC18FDBAE80025E5CC /* brIOSTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				DEDF85C218FDBAE80025E5CC /* brIOSTestTests.m */,
+				DEDF85BD18FDBAE80025E5CC /* Supporting Files */,
+			);
+			path = brIOSTestTests;
+			sourceTree = "<group>";
+		};
+		DEDF85BD18FDBAE80025E5CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DEDF85BE18FDBAE80025E5CC /* brIOSTestTests-Info.plist */,
+				DEDF85BF18FDBAE80025E5CC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DEDF85CE18FDBC890025E5CC /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DEF2031018FDE42B008AA191 /* tbAsyncImageView.h */,
+				DEF2031118FDE42B008AA191 /* tbAsyncImageView.m */,
+				DEDF85CF18FDBCB50025E5CC /* TableViewController.h */,
+				DEDF85D018FDBCB50025E5CC /* TableViewController.m */,
+				DEDF85D118FDBCB50025E5CC /* TableViewController.xib */,
+				DEDF85DA18FDC9360025E5CC /* CustomTableViewCell.h */,
+				DEDF85DB18FDC9360025E5CC /* CustomTableViewCell.m */,
+				DEDF85DC18FDC9360025E5CC /* CustomTableViewCell.xib */,
+			);
+			name = TableView;
+			sourceTree = "<group>";
+		};
+		DEDF85D418FDBD0B0025E5CC /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				DEDF85D518FDBD250025E5CC /* WebViewController.h */,
+				DEDF85D618FDBD250025E5CC /* WebViewController.m */,
+				DEDF85D718FDBD250025E5CC /* WebViewController.xib */,
+			);
+			name = WebView;
+			sourceTree = "<group>";
+		};
+		DEDF85DF18FDCC1B0025E5CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DEDF85E018FDCC940025E5CC /* Store.h */,
+				DEDF85E118FDCC940025E5CC /* Store.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DEDF85E318FDCD0F0025E5CC /* AppController */ = {
+			isa = PBXGroup;
+			children = (
+				DEDF85E418FDCD1C0025E5CC /* AppController.h */,
+				DEDF85E518FDCD1C0025E5CC /* AppController.m */,
+			);
+			name = AppController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DEDF859918FDBAE80025E5CC /* brIOSTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEDF85C618FDBAE80025E5CC /* Build configuration list for PBXNativeTarget "brIOSTest" */;
+			buildPhases = (
+				37BF699AB8A84D58974B8467 /* Check Pods Manifest.lock */,
+				DEDF859618FDBAE80025E5CC /* Sources */,
+				DEDF859718FDBAE80025E5CC /* Frameworks */,
+				DEDF859818FDBAE80025E5CC /* Resources */,
+				E6DD11A06A0D4B528D6A2A94 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = brIOSTest;
+			productName = brIOSTest;
+			productReference = DEDF859A18FDBAE80025E5CC /* brIOSTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DEDF85B418FDBAE80025E5CC /* brIOSTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEDF85C918FDBAE80025E5CC /* Build configuration list for PBXNativeTarget "brIOSTestTests" */;
+			buildPhases = (
+				DEDF85B118FDBAE80025E5CC /* Sources */,
+				DEDF85B218FDBAE80025E5CC /* Frameworks */,
+				DEDF85B318FDBAE80025E5CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEDF85BB18FDBAE80025E5CC /* PBXTargetDependency */,
+			);
+			name = brIOSTestTests;
+			productName = brIOSTestTests;
+			productReference = DEDF85B518FDBAE80025E5CC /* brIOSTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEDF859218FDBAE80025E5CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = sdickson;
+				TargetAttributes = {
+					DEDF85B418FDBAE80025E5CC = {
+						TestTargetID = DEDF859918FDBAE80025E5CC;
+					};
+				};
+			};
+			buildConfigurationList = DEDF859518FDBAE80025E5CC /* Build configuration list for PBXProject "brIOSTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DEDF859118FDBAE80025E5CC;
+			productRefGroup = DEDF859B18FDBAE80025E5CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEDF859918FDBAE80025E5CC /* brIOSTest */,
+				DEDF85B418FDBAE80025E5CC /* brIOSTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEDF859818FDBAE80025E5CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEDF85A818FDBAE80025E5CC /* InfoPlist.strings in Resources */,
+				DEDF85B018FDBAE80025E5CC /* Images.xcassets in Resources */,
+				DEDF85DE18FDC9360025E5CC /* CustomTableViewCell.xib in Resources */,
+				DEDF85CD18FDBB1C0025E5CC /* MainWindow.xib in Resources */,
+				DEDF85D918FDBD250025E5CC /* WebViewController.xib in Resources */,
+				DEDF85D318FDBCB50025E5CC /* TableViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEDF85B318FDBAE80025E5CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEDF85C118FDBAE80025E5CC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37BF699AB8A84D58974B8467 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E6DD11A06A0D4B528D6A2A94 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEDF859618FDBAE80025E5CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEDF85AE18FDBAE80025E5CC /* AppDelegate.m in Sources */,
+				DEDF85D218FDBCB50025E5CC /* TableViewController.m in Sources */,
+				DEDF85AA18FDBAE80025E5CC /* main.m in Sources */,
+				DEDF85E218FDCC940025E5CC /* Store.m in Sources */,
+				DEDF85E618FDCD1C0025E5CC /* AppController.m in Sources */,
+				DEDF85DD18FDC9360025E5CC /* CustomTableViewCell.m in Sources */,
+				DEDF85D818FDBD250025E5CC /* WebViewController.m in Sources */,
+				DEF2031218FDE42C008AA191 /* tbAsyncImageView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEDF85B118FDBAE80025E5CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEDF85C318FDBAE80025E5CC /* brIOSTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DEDF85BB18FDBAE80025E5CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEDF859918FDBAE80025E5CC /* brIOSTest */;
+			targetProxy = DEDF85BA18FDBAE80025E5CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DEDF85A618FDBAE80025E5CC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEDF85A718FDBAE80025E5CC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DEDF85BF18FDBAE80025E5CC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEDF85C018FDBAE80025E5CC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DEDF85C418FDBAE80025E5CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DEDF85C518FDBAE80025E5CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DEDF85C718FDBAE80025E5CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED7C9DAB398346178C3882A5 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "brIOSTest/brIOSTest-Prefix.pch";
+				INFOPLIST_FILE = "brIOSTest/brIOSTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DEDF85C818FDBAE80025E5CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED7C9DAB398346178C3882A5 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "brIOSTest/brIOSTest-Prefix.pch";
+				INFOPLIST_FILE = "brIOSTest/brIOSTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DEDF85CA18FDBAE80025E5CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/brIOSTest.app/brIOSTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "brIOSTest/brIOSTest-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "brIOSTestTests/brIOSTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DEDF85CB18FDBAE80025E5CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/brIOSTest.app/brIOSTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "brIOSTest/brIOSTest-Prefix.pch";
+				INFOPLIST_FILE = "brIOSTestTests/brIOSTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEDF859518FDBAE80025E5CC /* Build configuration list for PBXProject "brIOSTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEDF85C418FDBAE80025E5CC /* Debug */,
+				DEDF85C518FDBAE80025E5CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEDF85C618FDBAE80025E5CC /* Build configuration list for PBXNativeTarget "brIOSTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEDF85C718FDBAE80025E5CC /* Debug */,
+				DEDF85C818FDBAE80025E5CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEDF85C918FDBAE80025E5CC /* Build configuration list for PBXNativeTarget "brIOSTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEDF85CA18FDBAE80025E5CC /* Debug */,
+				DEDF85CB18FDBAE80025E5CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DEDF859218FDBAE80025E5CC /* Project object */;
+}
