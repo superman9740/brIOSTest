@@ -13,7 +13,7 @@
 
 -(void)dealloc
 {
-    
+ /*
     [ NSString* address;
     @property (nonatomic, copy) NSString* city;
     @property (nonatomic, copy) NSString* state;
@@ -26,7 +26,7 @@
     @property (nonatomic, strong) NSString* longitude;
     
     @property (nonatomic, strong) NSString* storeID;
-    
+   */ 
     [super dealloc];
     
     
