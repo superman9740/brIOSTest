@@ -22,6 +22,8 @@
     self.address.text = store.address;
     self.state.text = store.state;
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH,0);
+    
+    //Async image view loading
     dispatch_async(queue, ^{
         NSData   *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:store.storeLogoURL]];
         dispatch_sync(dispatch_get_main_queue(), ^{

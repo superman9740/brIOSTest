@@ -18,7 +18,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        
     }
     return self;
 }
@@ -45,7 +45,8 @@
 
     self.title = @"WebView";
     
-       
+    self.webView.frame = self.view.bounds;
+    
 }
 
 
@@ -54,8 +55,6 @@
     self.rewind.enabled = self.webView.canGoBack;
     self.forward.enabled = self.webView.canGoForward;
     self.stop.enabled = self.webView.loading;
-    
-    
     
 }
 
@@ -105,10 +104,6 @@
 -(void)dealloc
 {
     
-    [self.rewind release];
-    [self.forward release];
-    [self.stop release];
-    [self.reload release];
     
     [super dealloc];
     
@@ -118,7 +113,7 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
 @end

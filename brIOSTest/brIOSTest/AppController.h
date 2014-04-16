@@ -8,15 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import "Store.h"
-
+#import <RestKit.h>
 
 static NSString* const kRefreshTableViewNotification  = @"refreshTableViewNotification";
 
 
 @interface AppController : NSObject
 {
-    
-    
+    AFHTTPClient* client;
+    RKObjectManager* objectManager;
 
 
 }

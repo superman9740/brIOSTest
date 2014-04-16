@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AsyncImageView.h"
+
 
 @interface CustomTableViewCell : UITableViewCell
 {

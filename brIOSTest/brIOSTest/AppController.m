@@ -7,7 +7,7 @@
 //
 
 #import "AppController.h"
-#import <RestKit.h>
+
 
 static AppController *sharedInstance = nil;
 
@@ -32,10 +32,10 @@ static AppController *sharedInstance = nil;
         
       
         NSURL *baseURL = [NSURL URLWithString:@"http://strong-earth-32.heroku.com"];
-        AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:baseURL];
+        client = [[AFHTTPClient alloc] initWithBaseURL:baseURL];
         
         // initialize RestKit
-        RKObjectManager *objectManager = [[RKObjectManager alloc] initWithHTTPClient:client];
+        objectManager = [[RKObjectManager alloc] initWithHTTPClient:client];
         
         // setup object mappings
         RKObjectMapping *venueMapping = [RKObjectMapping mappingForClass:[Store class]];
@@ -57,13 +57,13 @@ static AppController *sharedInstance = nil;
     [[RKObjectManager sharedManager] getObjectsAtPath:@"/stores.aspx"
                                            parameters:nil
                                               success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
-                                                  self.stores = [[NSMutableArray alloc] initWithArray:mappingResult.array];
+                                                  self.stores = [[[NSMutableArray alloc] initWithArray:mappingResult.array] autorelease];
                                                   
                                                   
                                                   dispatch_async(dispatch_get_main_queue(), ^{
                                                       
                                                       [[NSNotificationCenter defaultCenter] postNotificationName:kRefreshTableViewNotification object:nil userInfo:nil];
-                                                      
+                                                     
                                                   });
                                                   
                                               }
@@ -76,8 +76,8 @@ static AppController *sharedInstance = nil;
 
 -(void)dealloc
 {
-    
-    [self.stores release];
+    [client release];
+    [objectManager release];
     
     [super dealloc];
     

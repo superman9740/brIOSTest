@@ -31,7 +31,6 @@
 		DEDF85DE18FDC9360025E5CC /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEDF85DC18FDC9360025E5CC /* CustomTableViewCell.xib */; };
 		DEDF85E218FDCC940025E5CC /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDF85E118FDCC940025E5CC /* Store.m */; };
 		DEDF85E618FDCD1C0025E5CC /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDF85E518FDCD1C0025E5CC /* AppController.m */; };
-		DEF2031218FDE42C008AA191 /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF2031118FDE42B008AA191 /* AsyncImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,8 +77,6 @@
 		DEDF85E118FDCC940025E5CC /* Store.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Store.m; sourceTree = "<group>"; };
 		DEDF85E418FDCD1C0025E5CC /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		DEDF85E518FDCD1C0025E5CC /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
-		DEF2031018FDE42B008AA191 /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageView.h; sourceTree = "<group>"; };
-		DEF2031118FDE42B008AA191 /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageView.m; sourceTree = "<group>"; };
 		ECDF47BF2DC145BE988F5D2A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED7C9DAB398346178C3882A5 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -200,8 +197,6 @@
 			isa = PBXGroup;
 			children = (
 				3C7AC7D218FDFFAE0032DDAF /* StoreDetailView */,
-				DEF2031018FDE42B008AA191 /* AsyncImageView.h */,
-				DEF2031118FDE42B008AA191 /* AsyncImageView.m */,
 				DEDF85CF18FDBCB50025E5CC /* TableViewController.h */,
 				DEDF85D018FDBCB50025E5CC /* TableViewController.m */,
 				DEDF85D118FDBCB50025E5CC /* TableViewController.xib */,
@@ -383,7 +378,6 @@
 				DEDF85E618FDCD1C0025E5CC /* AppController.m in Sources */,
 				DEDF85DD18FDC9360025E5CC /* CustomTableViewCell.m in Sources */,
 				DEDF85D818FDBD250025E5CC /* WebViewController.m in Sources */,
-				DEF2031218FDE42C008AA191 /* AsyncImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
