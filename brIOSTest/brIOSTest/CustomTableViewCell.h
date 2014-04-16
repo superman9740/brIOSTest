@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AsyncImageView.h"
 
 @interface CustomTableViewCell : UITableViewCell
+{
+    
+    
+}
+
+@property (nonatomic, strong) IBOutlet UIImageView* storeLogoImageView;
+@property (nonatomic, strong) IBOutlet UILabel* phoneLabel;
+@property (nonatomic, strong) IBOutlet UILabel* addressLabel;
+
 
 @end

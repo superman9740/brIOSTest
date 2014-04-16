@@ -1,14 +1,13 @@
 //
-//  tbAsyncImageView.m
-//  tbAppStore
+//  AsyncImageView.m
 //
 //  Created by Shane Dickson on 2/27/13.
 // 
 //
 
-#import "tbAsyncImageView.h"
+#import "AsyncImageView.h"
 
-@implementation tbAsyncImageView
+@implementation AsyncImageView
 
 - (id)init
 {
@@ -79,6 +78,7 @@
         
     }
 
+    [self setNeedsDisplay];
     
 }
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error

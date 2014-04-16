@@ -8,6 +8,24 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WebViewController : UIViewController
+@interface WebViewController : UIViewController<UIWebViewDelegate>
+{
+    
+    
+}
+
+@property (nonatomic, strong) IBOutlet UIWebView* webView;
+@property (nonatomic, strong)  UIBarButtonItem* rewind;
+@property (nonatomic, strong)  UIBarButtonItem* forward;
+@property (nonatomic, strong)  UIBarButtonItem* stop;
+@property (nonatomic, strong)  UIBarButtonItem* reload;
+
+
+-(IBAction)rewind:(id)sender;
+-(IBAction)forward:(id)sender;
+-(IBAction)stop:(id)sender;
+-(IBAction)refresh:(id)sender;
+
+-(void)updateToolbarButtons;
 
 @end

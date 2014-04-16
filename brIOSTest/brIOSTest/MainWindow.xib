@@ -28,7 +28,7 @@
         <tabBarController definesPresentationContext="YES" id="3Cf-57-7N7">
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
-            <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
             <tabBar key="tabBar" contentMode="scaleToFill" selectedItem="oP1-r0-TuK" id="Elk-Xh-xb9">
@@ -37,29 +37,8 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </tabBar>
             <viewControllers>
-                <navigationController definesPresentationContext="YES" id="dPT-dL-LTh">
-                    <tabBarItem key="tabBarItem" title="Item" id="oP1-r0-TuK"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fof-VB-X1I">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <viewControllers>
-                        <viewController nibName="WebViewController" id="vUT-fI-dnU" customClass="WebViewController">
-                            <navigationItem key="navigationItem" title="Root View Controller" id="mHa-VS-ura"/>
-                            <nil key="simulatedStatusBarMetrics"/>
-                            <nil key="simulatedTopBarMetrics"/>
-                            <nil key="simulatedBottomBarMetrics"/>
-                            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                            <nil key="simulatedDestinationMetrics"/>
-                        </viewController>
-                    </viewControllers>
-                </navigationController>
                 <navigationController definesPresentationContext="YES" id="Sqf-Ev-aLl">
-                    <tabBarItem key="tabBarItem" title="Item" id="Wr9-63-GgL"/>
+                    <tabBarItem key="tabBarItem" title="TableView" id="Wr9-63-GgL"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
@@ -78,6 +57,31 @@
                             <nil key="simulatedDestinationMetrics"/>
                         </viewController>
                     </viewControllers>
+                </navigationController>
+                <navigationController definesPresentationContext="YES" toolbarHidden="NO" id="dPT-dL-LTh">
+                    <tabBarItem key="tabBarItem" title="WebView" id="oP1-r0-TuK"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fof-VB-X1I">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <viewControllers>
+                        <viewController nibName="WebViewController" id="vUT-fI-dnU" customClass="WebViewController">
+                            <navigationItem key="navigationItem" title="Root View Controller" id="mHa-VS-ura"/>
+                            <nil key="simulatedStatusBarMetrics"/>
+                            <nil key="simulatedTopBarMetrics"/>
+                            <nil key="simulatedBottomBarMetrics"/>
+                            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                            <nil key="simulatedDestinationMetrics"/>
+                        </viewController>
+                    </viewControllers>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="AP1-JD-n0d">
+                        <rect key="frame" x="0.0" y="416" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                 </navigationController>
             </viewControllers>
         </tabBarController>

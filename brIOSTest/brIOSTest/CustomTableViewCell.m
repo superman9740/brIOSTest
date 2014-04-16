@@ -12,7 +12,8 @@
 
 - (void)awakeFromNib
 {
-    // Initialization code
+    //self.storeLogoImageView = [[UIImageView alloc] init];
+    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

@@ -9,6 +9,7 @@
 #import "TableViewController.h"
 #import "CustomTableViewCell.h"
 #import "AppController.h"
+#import "StoreDetailViewController.h"
 
 
 @interface TableViewController ()
@@ -29,6 +30,7 @@
     [self.tableView registerNib:customCellNib forCellReuseIdentifier:@"customCell"];
     [self.tableView reloadData];
     
+     self.title = @"TableView";
     
 }
 
@@ -57,7 +59,6 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 
-    // Return the number of rows in the section.
     long count = [[[AppController sharedInstance] stores] count];
     
     return count;
@@ -73,13 +74,31 @@
     if(customCell)
     {
         
-        customCell.textLabel.text = store.name;
+        customCell.phoneLabel.text = store.phone;
+        customCell.addressLabel.text = [NSString stringWithFormat:@"%@ %@ %@", store.address, store.city, store.state];
+        dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH,0);
+        dispatch_async(queue, ^{
+            NSData   *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:store.storeLogoURL]];
+            dispatch_sync(dispatch_get_main_queue(), ^{
+                
+                customCell.storeLogoImageView.image = [UIImage imageWithData:data];
+                [customCell setNeedsDisplay];
+                
+            });
+        
+        });
         
     }
+    
     
     return customCell;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 123;
+    
+}
 
 /*
 // Override to support conditional editing of the table view.
@@ -119,21 +138,17 @@
 }
 */
 
-/*
+
 #pragma mark - Table view delegate
 
-// In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here, for example:
-    // Create the next view controller.
-    <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:<#@"Nib name"#> bundle:nil];
+    StoreDetailViewController* detailViewController = [[StoreDetailViewController alloc] initWithNibName:@"StoreDetailView" bundle:nil];
     
-    // Pass the selected object to the new view controller.
-    
-    // Push the view controller.
+    detailViewController.selectedIndex = indexPath.row;
     [self.navigationController pushViewController:detailViewController animated:YES];
+
 }
-*/
+
 
 @end

@@ -1,6 +1,5 @@
 //
-//  tbAsyncImageView.h
-//  tbAppStore
+//  AsyncImageView.h
 //
 //  Created by Shane Dickson on 2/27/13.
 //  
@@ -11,7 +10,7 @@
 
 typedef void(^ImageDownloadCallback)();
 
-@interface tbAsyncImageView : UIImageView
+@interface AsyncImageView : UIImageView
 {
     
 

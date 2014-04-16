@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C7AC7D518FDFFEA0032DDAF /* StoreDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7AC7D418FDFFEA0032DDAF /* StoreDetailViewController.m */; };
+		3C7AC7D718FE00010032DDAF /* StoreDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C7AC7D618FE00010032DDAF /* StoreDetailView.xib */; };
 		8F6664BE35A6401DB40C1F6D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECDF47BF2DC145BE988F5D2A /* libPods.a */; };
 		DEDF859E18FDBAE80025E5CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEDF859D18FDBAE80025E5CC /* Foundation.framework */; };
 		DEDF85A018FDBAE80025E5CC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEDF859F18FDBAE80025E5CC /* CoreGraphics.framework */; };
@@ -29,7 +31,7 @@
 		DEDF85DE18FDC9360025E5CC /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEDF85DC18FDC9360025E5CC /* CustomTableViewCell.xib */; };
 		DEDF85E218FDCC940025E5CC /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDF85E118FDCC940025E5CC /* Store.m */; };
 		DEDF85E618FDCD1C0025E5CC /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDF85E518FDCD1C0025E5CC /* AppController.m */; };
-		DEF2031218FDE42C008AA191 /* tbAsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF2031118FDE42B008AA191 /* tbAsyncImageView.m */; };
+		DEF2031218FDE42C008AA191 /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF2031118FDE42B008AA191 /* AsyncImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C7AC7D318FDFFEA0032DDAF /* StoreDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreDetailViewController.h; sourceTree = "<group>"; };
+		3C7AC7D418FDFFEA0032DDAF /* StoreDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreDetailViewController.m; sourceTree = "<group>"; };
+		3C7AC7D618FE00010032DDAF /* StoreDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoreDetailView.xib; sourceTree = "<group>"; };
 		DEDF859A18FDBAE80025E5CC /* brIOSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = brIOSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEDF859D18FDBAE80025E5CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DEDF859F18FDBAE80025E5CC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -73,8 +78,8 @@
 		DEDF85E118FDCC940025E5CC /* Store.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Store.m; sourceTree = "<group>"; };
 		DEDF85E418FDCD1C0025E5CC /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		DEDF85E518FDCD1C0025E5CC /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
-		DEF2031018FDE42B008AA191 /* tbAsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tbAsyncImageView.h; sourceTree = "<group>"; };
-		DEF2031118FDE42B008AA191 /* tbAsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tbAsyncImageView.m; sourceTree = "<group>"; };
+		DEF2031018FDE42B008AA191 /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageView.h; sourceTree = "<group>"; };
+		DEF2031118FDE42B008AA191 /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageView.m; sourceTree = "<group>"; };
 		ECDF47BF2DC145BE988F5D2A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED7C9DAB398346178C3882A5 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,6 +109,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C7AC7D218FDFFAE0032DDAF /* StoreDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				3C7AC7D318FDFFEA0032DDAF /* StoreDetailViewController.h */,
+				3C7AC7D418FDFFEA0032DDAF /* StoreDetailViewController.m */,
+				3C7AC7D618FE00010032DDAF /* StoreDetailView.xib */,
+			);
+			name = StoreDetailView;
+			sourceTree = "<group>";
+		};
 		DEDF859118FDBAE80025E5CC = {
 			isa = PBXGroup;
 			children = (
@@ -184,8 +199,9 @@
 		DEDF85CE18FDBC890025E5CC /* TableView */ = {
 			isa = PBXGroup;
 			children = (
-				DEF2031018FDE42B008AA191 /* tbAsyncImageView.h */,
-				DEF2031118FDE42B008AA191 /* tbAsyncImageView.m */,
+				3C7AC7D218FDFFAE0032DDAF /* StoreDetailView */,
+				DEF2031018FDE42B008AA191 /* AsyncImageView.h */,
+				DEF2031118FDE42B008AA191 /* AsyncImageView.m */,
 				DEDF85CF18FDBCB50025E5CC /* TableViewController.h */,
 				DEDF85D018FDBCB50025E5CC /* TableViewController.m */,
 				DEDF85D118FDBCB50025E5CC /* TableViewController.xib */,
@@ -307,6 +323,7 @@
 				DEDF85CD18FDBB1C0025E5CC /* MainWindow.xib in Resources */,
 				DEDF85D918FDBD250025E5CC /* WebViewController.xib in Resources */,
 				DEDF85D318FDBCB50025E5CC /* TableViewController.xib in Resources */,
+				3C7AC7D718FE00010032DDAF /* StoreDetailView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,12 +377,13 @@
 			files = (
 				DEDF85AE18FDBAE80025E5CC /* AppDelegate.m in Sources */,
 				DEDF85D218FDBCB50025E5CC /* TableViewController.m in Sources */,
+				3C7AC7D518FDFFEA0032DDAF /* StoreDetailViewController.m in Sources */,
 				DEDF85AA18FDBAE80025E5CC /* main.m in Sources */,
 				DEDF85E218FDCC940025E5CC /* Store.m in Sources */,
 				DEDF85E618FDCD1C0025E5CC /* AppController.m in Sources */,
 				DEDF85DD18FDC9360025E5CC /* CustomTableViewCell.m in Sources */,
 				DEDF85D818FDBD250025E5CC /* WebViewController.m in Sources */,
-				DEF2031218FDE42C008AA191 /* tbAsyncImageView.m in Sources */,
+				DEF2031218FDE42C008AA191 /* AsyncImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
